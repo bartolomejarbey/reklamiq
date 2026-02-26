@@ -98,3 +98,4 @@ Vercel Dashboard → Settings → Environment Variables:
 | Grafika | Placid.app (šablony) |
 | Databáze | Supabase (připraveno) |
 | Platby | Stripe (připraveno) |
+# reklamiq
