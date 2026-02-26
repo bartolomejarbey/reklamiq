@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REKLAMIQ – Marketing bez starostí</title>
+    <meta name="description" content="Automatický marketing pro české firmy. Příspěvky na sociální sítě, reklamy a e-maily v češtině, s vašimi fotkami. Od 699 Kč/měsíc.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="/" class="nav-logo">REKLAMIQ</a>
+    <div class="nav-links">
+        <a href="#jak-to-funguje">Jak to funguje</a>
+        <a href="#demo">Vyzkoušet</a>
+        <a href="#cenik">Ceník</a>
+        <a href="#demo" class="btn-primary btn-sm">Začít zdarma →</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-badge">
+        <span class="dot"></span>
+        Nová éra marketingu pro české firmy
+    </div>
+    <h1>Marketing bez starostí.<br><span class="accent">Za pár minut.</span></h1>
+    <p>Zadejte web vaší firmy a REKLAMIQ vám automaticky vytvoří příspěvky na sociální sítě, reklamy a e-maily. V češtině. S vašimi fotkami. Bez agentury.</p>
+    <div class="hero-cta">
+        <a href="#demo" class="btn-primary">Vyzkoušet zdarma →</a>
+        <a href="#jak-to-funguje" class="btn-outline">Jak to funguje</a>
+    </div>
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <div class="num">10×</div>
+            <div class="label">Rychlejší než agentura</div>
+        </div>
+        <div class="hero-stat">
+            <div class="num">91%</div>
+            <div class="label">Úspora nákladů</div>
+        </div>
+        <div class="hero-stat">
+            <div class="num">100%</div>
+            <div class="label">Česky</div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="jak-to-funguje">
+    <div class="section-label">○ Jak to funguje</div>
+    <h2 class="section-title">Od vašeho webu k hotovým<br>reklamám za 3 minuty</h2>
+    <p class="section-desc">Žádné šablony. Žádné promptování. REKLAMIQ analyzuje váš brand a vytvoří obsah, který vypadá, jako by ho dělal váš vlastní tým.</p>
+    <div class="steps-grid">
+        <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Zadejte URL webu</h3>
+            <p>Naše AI analyzuje váš web – služby, tón komunikace, barvy, cílovou skupinu. Během sekund vznikne váš Brand DNA profil.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Nahrajte fotky</h3>
+            <p>Vaše reálné fotky práce, interiéru, týmu. Žádné generické AI obrázky – vaši zákazníci chtějí vidět vás.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Hotový obsah</h3>
+            <p>Příspěvky na sociální sítě, reklamy i e-maily. S vašimi fotkami, v češtině, ve vašem stylu. Schvalte a publikujte.</p>
+        </div>
+    </div>
+</section>
+
+<!-- GENERATOR -->
+<section id="demo">
+    <div id="generator">
+        <div style="text-align:center;">
+            <div class="section-label">◆ Vyzkoušejte si to</div>
+            <h2 class="section-title">Zadejte URL vašeho webu</h2>
+            <p class="section-desc" style="margin:0 auto;">Vygenerujeme vám ukázkový obsah zdarma. Žádná registrace.</p>
+        </div>
+        <div class="generator-input-wrap">
+            <input type="url" id="urlInput" placeholder="https://vasefirma.cz" />
+            <button class="btn-primary" onclick="startGeneration()">Generovat →</button>
+        </div>
+        <div class="loading-bar" id="loadingBar">
+            <div class="loading-bar-inner" id="loadingBarInner"></div>
+        </div>
+        <div class="loading-status" id="loadingStatus"></div>
+
+        <div class="results-container" id="results">
+            <div class="brand-dna-card">
+                <h3>🧬 Brand DNA – <span id="brandName">Vaše firma</span></h3>
+                <div class="brand-tags" id="brandTags"></div>
+            </div>
+            <div class="posts-header">
+                <div>
+                    <h3>Vygenerovaný obsah</h3>
+                    <p>1 příspěvek zdarma · Odemkněte zbytek s předplatným</p>
+                </div>
+            </div>
+            <div class="posts-grid" id="postsGrid"></div>
+            <div class="cta-box">
+                <h3>Líbí se vám, co vidíte?</h3>
+                <p>Odemkněte všech 12 příspěvků a získejte nový obsah každý měsíc.</p>
+                <a href="#cenik" class="btn-primary">Zobrazit ceník se slevou 40% →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section id="cenik">
+    <div style="text-align:center;">
+        <div class="section-label">◆ Ceník</div>
+        <h2 class="section-title">Kompletní marketing.<br>Zlomek ceny agentury.</h2>
+        <p class="section-desc" style="margin:0 auto;">
+            <span class="price-discount" style="font-size:0.85rem; padding:4px 14px;">🔥 SLEVA 40% pro nové uživatele</span>
+        </p>
+    </div>
+    <div class="pricing-grid">
+        <!-- STARTER -->
+        <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price-desc">Pro živnostníky a začínající firmy</p>
+            <div class="price-row">
+                <span class="price-original">1 165 Kč</span>
+                <span class="price-discount">-40%</span>
+            </div>
+            <div class="price-amount">699 Kč <span>/měsíc</span></div>
+            <ul class="price-features">
+                <li>10 organických příspěvků</li>
+                <li>2 reklamní příspěvky</li>
+                <li>Brand DNA analýza</li>
+                <li>1 sociální síť</li>
+                <li>Šablony s vlastními fotkami</li>
+            </ul>
+            <a href="#demo" class="btn-outline" style="width:100%; justify-content:center;">Začít zdarma</a>
+        </div>
+        <!-- PRO -->
+        <div class="price-card featured">
+            <h3>Pro</h3>
+            <p class="price-desc">Pro salony, servisy, kavárny, e-shopy</p>
+            <div class="price-row">
+                <span class="price-original">2 165 Kč</span>
+                <span class="price-discount">-40%</span>
+            </div>
+            <div class="price-amount">1 299 Kč <span>/měsíc</span></div>
+            <ul class="price-features">
+                <li>20 organických příspěvků</li>
+                <li>4 reklamní příspěvky</li>
+                <li>Brand DNA analýza</li>
+                <li>Všechny sociální sítě</li>
+                <li>Šablony s vlastními fotkami</li>
+                <li>Plánovač obsahu</li>
+                <li>Varianty s textem i bez</li>
+            </ul>
+            <a href="#demo" class="btn-primary" style="width:100%; justify-content:center;">Začít zdarma</a>
+        </div>
+        <!-- INDIVIDUAL -->
+        <div class="price-card">
+            <h3>Individual</h3>
+            <p class="price-desc">Řešení na míru pro vaši firmu</p>
+            <div class="price-amount" style="font-size:2rem; margin:20px 0;">Na míru</div>
+            <ul class="price-features">
+                <li>Neomezené příspěvky</li>
+                <li>E-mailové kampaně</li>
+                <li>Automatizace DMs (IG + Messenger)</li>
+                <li>Dedikovaný account manager</li>
+                <li>White-label export</li>
+                <li>Prioritní podpora</li>
+            </ul>
+            <a href="mailto:info@reklamiq.cz" class="btn-outline" style="width:100%; justify-content:center;">Kontaktujte nás</a>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+        <p style="color:var(--gray-400); font-size:0.9rem;">
+            Agentura stojí 10 000–30 000 Kč/měsíc. Freelancer 5 000–15 000 Kč/měsíc.<br>
+            <strong style="color:var(--white);">REKLAMIQ od 699 Kč/měsíc.</strong> Stejný výsledek, zlomek ceny.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <a href="/" class="nav-logo" style="display:inline-block; margin-bottom:16px;">REKLAMIQ</a>
+    <p>© 2026 REKLAMIQ. Marketing bez starostí pro české firmy.</p>
+</footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
